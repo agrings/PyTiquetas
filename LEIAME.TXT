@@ -1,0 +1,29 @@
+Impressao de etiquetas na argox com preenchimento manual
+
+imprimeEtiqueta.py:
+-------------------
+Recebe dois argumentos via linha de comando:
+1) impressora
+2) arquivo_a_imprimir
+Se for chamado sem argumentos:
+1) tenta abrir um etiqueta.txt no diretorio local. 
+2) Se encontrar envia-o para \\ARTEMIS\ARGOXPRD
+
+Etiquetas.py: 
+-------------
+Interface gráfica para preenchimento de etiqueta. Tenta
+abrir o arquivo modelo.txt e substitui os valores pelos que o usuario
+digitou. Salva o modelo modificado no arquivo etiqueta.txt e chama o
+imprimeEtiqueta.py
+
+
+modelo.txt: 
+-----------
+arquivo em ppla. Os nomes dos campos a substituir estao entre colchetes.
+Exemplo: "[CodigoProduto]" 
+É possivel criar um modelo no bartender e modifica-lo manualmente.
+
+A fazer:
+--------
+* Escolha da impressora
+* Salvar configuracao local
